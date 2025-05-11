@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education - Anisha Sidhu</title>
+    <link rel="stylesheet" th:href="@{/css/education.css}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="brand-title">Anisha Sidhu</div>
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+            <ul>
+                <li><a th:href="@{/}">Home</a></li>
+                <li><a th:href="@{/education}" class="active">Education</a></li>
+                <li><a th:href="@{/collaborations}">Collaborations</a></li>
+                <li><a th:href="@{/jobs}">Jobs</a></li>
+                <li><a th:href="@{/media-events}">Media Events</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Education Header -->
+    <header class="education-header">
+        <div class="header-content">
+            <h1>My Educational Journey</h1>
+            <p>Exploring the path of continuous learning and growth</p>
+        </div>
+    </header>
+
+    <!-- Education Timeline -->
+    <section class="education-timeline">
+        <div class="container">
+            <!-- Post Secondary Education -->
+            <div class="education-card" id="post-secondary">
+                <div class="education-icon">
+                    <i class="fas fa-school"></i>
+                </div>
+                <div class="education-content">
+                    <h2>Post Secondary Education</h2>
+                    <div class="education-info">
+                        <div class="edu-detail">
+                            <h3>School Name</h3>
+                            <p class="duration">2010 - 2014</p>
+                            <p class="location"><i class="fas fa-map-marker-alt"></i> School Location</p>
+                            
+                            <div class="description">
+                                <h4>Program Details</h4>
+                                <p>Write your post-secondary education details here. Include information about your major subjects, achievements, extracurricular activities, and any special projects or skills you developed during this period.</p>
+                            </div>
+                            
+                            <div class="achievements">
+                                <h4>Achievements & Highlights</h4>
+                                <ul>
+                                    <li>Achievement 1 - Describe an accomplishment during this period</li>
+                                    <li>Achievement 2 - Describe another accomplishment</li>
+                                    <li>Achievement 3 - Describe one more accomplishment</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bachelor's Degree -->
+            <div class="education-card" id="bachelors">
+                <div class="education-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div class="education-content">
+                    <h2>Bachelor's Degree</h2>
+                    <div class="education-info">
+                        <div class="edu-detail">
+                            <h3>University Name</h3>
+                            <p class="duration">2014 - 2018</p>
+                            <p class="location"><i class="fas fa-map-marker-alt"></i> University Location</p>
+                            
+                            <div class="description">
+                                <h4>Degree Program</h4>
+                                <p>Write details about your bachelor's degree here. Include information about your major, minor (if applicable), key courses, research projects, internships, and any significant academic accomplishments during your undergraduate studies.</p>
+                            </div>
+                            
+                            <div class="achievements">
+                                <h4>Achievements & Highlights</h4>
+                                <ul>
+                                    <li>Achievement 1 - Describe an accomplishment during your bachelor's</li>
+                                    <li>Achievement 2 - Describe another accomplishment</li>
+                                    <li>Achievement 3 - Describe one more accomplishment</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="thesis">
+                                <h4>Bachelor's Thesis / Capstone Project</h4>
+                                <p>If applicable, write about your thesis or final project here, including the title, focus area, methodology, and key findings or outcomes.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Master's Degree -->
+            <div class="education-card" id="masters">
+                <div class="education-icon">
+                    <i class="fas fa-award"></i>
+                </div>
+                <div class="education-content">
+                    <h2>Master's Degree</h2>
+                    <div class="education-info">
+                        <div class="edu-detail">
+                            <h3>University Name</h3>
+                            <p class="duration">2018 - 2020</p>
+                            <p class="location"><i class="fas fa-map-marker-alt"></i> University Location</p>
+                            
+                            <div class="description">
+                                <h4>Degree Program</h4>
+                                <p>Write details about your master's degree here. Describe your specialization, advanced coursework, research focus, and any teaching or research assistantships you held. Include information about conferences attended, papers published, or presentations given.</p>
+                            </div>
+                            
+                            <div class="achievements">
+                                <h4>Achievements & Highlights</h4>
+                                <ul>
+                                    <li>Achievement 1 - Describe an accomplishment during your master's</li>
+                                    <li>Achievement 2 - Describe another accomplishment</li>
+                                    <li>Achievement 3 - Describe one more accomplishment</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="thesis">
+                                <h4>Master's Thesis</h4>
+                                <p>Write about your master's thesis here, including the title, research questions, methodology, key findings, and any publications or presentations that resulted from this work.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>Anisha Sidhu</h3>
+                <p>Professional portfolio and personal website.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a th:href="@{/}">Home</a></li>
+                    <li><a th:href="@{/education}">Education</a></li>
+                    <li><a th:href="@{/collaborations}">Collaborations</a></li>
+                    <li><a th:href="@{/jobs}">Jobs</a></li>
+                    <li><a th:href="@{/media-events}">Media Events</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contact</h3>
+                <p><i class="fas fa-envelope"></i> contact@anishasidhu.com</p>
+                <p><i class="fas fa-phone"></i> +1 (123) 456-7890</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Anisha Sidhu. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script th:src="@{/js/education.js}"></script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anisha Sidhu - Personal Website</title>
+    <link rel="stylesheet" th:href="@{/css/styles.css}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="brand-title">Anisha Sidhu</div>
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+            <ul>
+                <li><a th:href="@{/}" class="active">Home</a></li>
+                <li><a th:href="@{/education}">Education</a></li>
+                <li><a th:href="@{/collaborations}">Collaborations</a></li>
+                <li><a th:href="@{/jobs}">Jobs</a></li>
+                <li><a th:href="@{/media-events}">Media Events</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm Anisha Sidhu</h1>
+            <p class="subtitle">Professional • Creative • Passionate</p>
+            <div class="cta-buttons">
+                <a href="#gallery" class="cta-btn primary">View Gallery</a>
+                <a th:href="@{/collaborations}" class="cta-btn secondary">Recent Work</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <h2>Photo Gallery</h2>
+        <div class="photo-grid">
+            <!-- Photo items will be populated by JavaScript -->
+            <div class="photo-item">
+                <div class="photo-container">
+                    <img src="https://via.placeholder.com/400x500" alt="Anisha Sidhu" class="gallery-img">
+                </div>
+            </div>
+            <div class="photo-item">
+                <div class="photo-container">
+                    <img src="https://via.placeholder.com/400x500" alt="Anisha Sidhu" class="gallery-img">
+                </div>
+            </div>
+            <div class="photo-item">
+                <div class="photo-container">
+                    <img src="https://via.placeholder.com/400x500" alt="Anisha Sidhu" class="gallery-img">
+                </div>
+            </div>
+            <div class="photo-item">
+                <div class="photo-container">
+                    <img src="https://via.placeholder.com/400x500" alt="Anisha Sidhu" class="gallery-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Access Section -->
+    <section class="quick-access">
+        <h2>Quick Access</h2>
+        <div class="card-container">
+            <a th:href="@{/education}" class="card">
+                <div class="card-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <h3>Education</h3>
+                <p>Academic background and qualifications</p>
+            </a>
+            <a th:href="@{/collaborations}" class="card">
+                <div class="card-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3>Collaborations</h3>
+                <p>Previous partnerships and projects</p>
+            </a>
+            <a th:href="@{/jobs}" class="card">
+                <div class="card-icon">
+                    <i class="fas fa-briefcase"></i>
+                </div>
+                <h3>Jobs</h3>
+                <p>Professional experience and roles</p>
+            </a>
+            <a th:href="@{/media-events}" class="card">
+                <div class="card-icon">
+                    <i class="fas fa-camera"></i>
+                </div>
+                <h3>Media Events</h3>
+                <p>Appearances and media coverage</p>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>Anisha Sidhu</h3>
+                <p>Professional portfolio and personal website.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a th:href="@{/}">Home</a></li>
+                    <li><a th:href="@{/education}">Education</a></li>
+                    <li><a th:href="@{/collaborations}">Collaborations</a></li>
+                    <li><a th:href="@{/jobs}">Jobs</a></li>
+                    <li><a th:href="@{/media-events}">Media Events</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contact</h3>
+                <p><i class="fas fa-envelope"></i> contact@anishasidhu.com</p>
+                <p><i class="fas fa-phone"></i> +1 (123) 456-7890</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Anisha Sidhu. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script th:src="@{/js/script.js}"></script>
+</body>
+</html>
